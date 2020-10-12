@@ -8,10 +8,17 @@ end
 # so they will be available to test and play around with in your console
 
 cult1 = Cult.new("Queen", "NYC, NY", 1985, "Anyway you want it")
+cult2 = Cult.new("Mormons", "Salt Lake City", 1770, "CTR")
+cult3 = Cult.new("JW", "NYC, NY", 1000, "People")
 
 david = Follower.new("David", 22, "Life. Motto.")
+ash = Follower.new("Ash", 21, "Dogs. Cats.")
 
-blood1 = BloodOath.new(cult1, david, "_2020-10-11_")
+david.join_cult(cult1)
+david.join_cult(cult2)
+ash.join_cult(cult2)
+
+
 
 binding.pry
 
