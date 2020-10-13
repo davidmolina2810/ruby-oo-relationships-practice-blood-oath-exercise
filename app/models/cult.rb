@@ -17,8 +17,8 @@ class Cult
     return bloods.map {|blood| blood.follower}
   end
 
-  def recruit_follower(follower) # adds follower to cult's followers by creating new bloodoath
-    BloodOath.new(self, follower)
+  def recruit_follower(follower, initiation_date) # adds follower to cult's followers by creating new bloodoath
+    BloodOath.new(self, follower, initiation_date)
     return followers
   end
 
@@ -52,7 +52,7 @@ class Cult
   end
   
   def self.least_popular # returns Cult with least amount of followers
-    return Cult.all.min {|cult| cult.followers.length}
+    return Cult.all.min_by {|cult| cult.cult_population}
   end
 
   def self.most_common_location # returns location that has the most cults 

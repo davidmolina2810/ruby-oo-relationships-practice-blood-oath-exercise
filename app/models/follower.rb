@@ -16,8 +16,8 @@ class Follower
     return bloods.map {|blood| blood.cult}
   end
 
-  def join_cult(cult) # makes new BloodOath between given cult and self-follower and returns all cults self-follower follows
-    BloodOath.new(cult, self)
+  def join_cult(cult, initiation_date) # makes new BloodOath between given cult and self-follower and returns all cults self-follower follows
+    BloodOath.new(cult, self, initiation_date)
     return cults
   end
 
