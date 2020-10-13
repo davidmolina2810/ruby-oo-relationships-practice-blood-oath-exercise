@@ -7,9 +7,9 @@ end
 # This is a convenient place to define variables and/or set up new object instances,
 # so they will be available to test and play around with in your console
 
-cult1 = Cult.new("Queen", "NYC, NY", 1985, "Anyway you want it")
-cult2 = Cult.new("Mormons", "Salt Lake City", 1770, "CTR")
-cult3 = Cult.new("JW", "NYC, NY", 1000, "People")
+cult1 = Cult.new("Queen", "NYC, NY", 1985, "Anyway you want it", '_1999-10-14_')
+cult2 = Cult.new("XYZ", "Salt Lake City", 1770, "CTR", '_2005-06-10_')
+cult3 = Cult.new("JW", "NYC, NY", 1000, "People", '_2020-04-20_')
 
 david = Follower.new("David", 22, "Life. Motto.")
 ash = Follower.new("Ash", 21, "Dogs. Cats.")

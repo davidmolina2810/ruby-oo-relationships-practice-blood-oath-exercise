@@ -4,7 +4,7 @@ class BloodOath
 
   @@all = [] # holds all instances of BloodOath
 
-  def initialize(cult, follower)
+  def initialize(cult, follower, initiation_date)
     @cult = cult
     @follower = follower
     @initiation_date = initiation_date
